@@ -1,30 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Physics - Learning Overland</title>
+  <title>Math - Learning Overland</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <header>
     <h1>Math - Learning Overland</h1>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="physics.html">Physics</a>
-      <a href="chemistry.html">Chemistry</a>
-      <a href="math.html">Mathematics</a>
-      <a href="astronomy.html">Astronomy</a>
-    </nav>
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
   </header>
+
+  <!-- Sidebar copied from index -->
+  <div id="sidebar" class="sidebar">
+    <button class="closebtn" onclick="toggleSidebar()">×</button>
+    <a href="../index.html">🏠 Home</a>
+    <a href="physics.html">🔬 Physics</a>
+    <a href="chemistry.html">⚗️ Chemistry</a>
+    <a href="math.html">📐 Mathematics</a>
+    <a href="astronomy.html">🌌 Astronomy</a>
+    <a href="biology.html">🧬 Biology</a>
+    <a href="#">👨‍🏫 About Us</a>
+    <a href="#">🧾 Student Records</a>
+    <a href="#">📧 Contact / Feedback</a>
+  </div>
 
   <main>
     <h2>Upload Math Content</h2>
     <input type="file" onchange="uploadContent(event)" />
     <h3>Uploaded Files:</h3>
     <ul id="fileList">
-      <li>Chapter 1 - Basic.pdf</li>
-      <li>Lecture 2 - sequence and series.mp4</li>
+      <li>Introduction to Cells.pdf</li>
+      <li>Plant Physiology Lecture.mp4</li>
     </ul>
   </main>
 
@@ -34,4 +41,3 @@
   <script src="../script.js"></script>
 </body>
 </html>
-
