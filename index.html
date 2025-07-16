@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learning Overland - Home</title>
+  <title>Learning Overland</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button class="closebtn" onclick="toggleSidebar()">×</button>
+    <a href="index.html">🏠 Home</a>
+    <a href="content/physics.html">🔬 Physics</a>
+    <a href="content/chemistry.html">⚗️ Chemistry</a>
+    <a href="content/math.html">📐 Mathematics</a>
+    <a href="content/astronomy.html">🌌 Astronomy</a>
+    <a href="#">👨‍🏫 About Us</a>
+    <a href="#">🧾 Student Records</a>
+    <a href="#">📧 Contact / Feedback</a>
+  </div>
+
+  <!-- Topbar -->
   <header>
     <h1>Learning Overland</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="content/physics.html">Physics</a>
-      <a href="content/chemistry.html">Chemistry</a>
-      <a href="content/math.html">Mathematics</a>
-      <a href="content/astronomy.html">Astronomy</a>
-      <a href="content/biology.html">Astronomy</a>
-    </nav>
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
   </header>
 
   <main>
@@ -27,6 +34,9 @@
 
   <footer>
     <p>© 2025 Learning Overland</p>
+    <p>@learningoverlandofficialbot</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
